@@ -530,7 +530,7 @@ module XeroRuby::Accounting
     # Custom attribute writer method checking allowed values (enum).
     # @param [Object] _class Object to be assigned
     def _class=(_class)
-      validator = EnumAttributeValidator.new('String', ["DEMO", "TRIAL", "STARTER", "STANDARD", "PREMIUM", "PREMIUM_20", "PREMIUM_50", "PREMIUM_100", "LEDGER", "GST_CASHBOOK", "NON_GST_CASHBOOK", "ULTIMATE", "LITE", "ULTIMATE_10", "ULTIMATE_20", "ULTIMATE_50", "ULTIMATE_100", "IGNITE", "GROW", "COMPREHENSIVE"]])
+      validator = EnumAttributeValidator.new('String', ["DEMO", "TRIAL", "STARTER", "STANDARD", "PREMIUM", "PREMIUM_20", "PREMIUM_50", "PREMIUM_100", "LEDGER", "GST_CASHBOOK", "NON_GST_CASHBOOK", "ULTIMATE", "LITE", "ULTIMATE_10", "ULTIMATE_20", "ULTIMATE_50", "ULTIMATE_100", "IGNITE", "GROW", "COMPREHENSIVE"])
       unless validator.valid?(_class)
         fail ArgumentError, "invalid value for \"_class\", must be one of #{validator.allowable_values}."
       end
