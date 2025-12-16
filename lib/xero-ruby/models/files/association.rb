@@ -19,9 +19,6 @@ module XeroRuby::Files
     # The unique identifier of the file
     attr_accessor :file_id
     
-    # The identifier of the object that the file is being associated with (e.g. InvoiceID, BankTransactionID, ContactID)
-    attr_accessor :object_id
-    
 
     attr_accessor :object_group
     
